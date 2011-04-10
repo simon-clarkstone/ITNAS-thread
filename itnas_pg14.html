@@ -1,0 +1,1801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2002-2006 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>MSPA &bull; View topic - In Their Native Art Style</title>
+
+<link rel="stylesheet" href="mspa.css" type="text/css" />
+
+<script type="text/javascript">
+// <![CDATA[
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Enter the page number you wish to go to.:', '14');
+	var perpage = '25';
+	var base_url = './viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd';
+
+	if (page !== null && !isNaN(page) && page > 0)
+	{
+		document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * perpage);
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+// ]]>
+</script>
+</head>
+<body class="ltr">
+
+<a name="top"></a>
+
+<div id="wrapheader">
+
+	<div id="logodesc">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td></td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="menubar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="genmed" align="left">
+				&nbsp;&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/index.php?sid=69f04023228ec7286871c927fde0bebd">MSPA Forum Index</a>
+				&nbsp;&nbsp;&nbsp;<a href="http://www.mspaintadventures.com">MSPA Home</a>
+                                &nbsp;&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/faq.php?sid=69f04023228ec7286871c927fde0bebd">FAQ</a>
+                                &nbsp;&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/search.php?sid=69f04023228ec7286871c927fde0bebd">Search</a>
+                                &nbsp;&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?sid=69f04023228ec7286871c927fde0bebd">Members</a>
+                                &nbsp;&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/ucp.php?sid=69f04023228ec7286871c927fde0bebd"><!--User Control Panel-->Profile</a>
+                                &nbsp;&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/ucp.php?mode=register&amp;sid=69f04023228ec7286871c927fde0bebd">Register</a>
+							</td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="datebar">
+		<table width="100%" cellspacing="0">
+
+		<tr>
+            <td class="genmed" align="left">
+		            </td>
+            <td class="genmed" align="right">
+							</td>
+        </tr>
+		</table>
+    </div>
+        
+	<!--<div id="findbar">
+		<table width="100%" cellspacing="0">
+		<tr>
+			<td class="gensmall"><br />Last visit was: <br />It is currently Tue Jul 20, 2010 4:59 am</td>
+            <td class="gensmall" align="right">            	<a href="./search.php?search_id=unanswered&amp;sid=69f04023228ec7286871c927fde0bebd">View unanswered posts</a><br /></td>
+		</tr>
+		</table>
+    </div>-->
+	
+</div>
+
+<div id="countdown">
+   <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="650" height="60" id="countDown" align="middle"> 
+	<param name="allowScriptAccess" value="sameDomain" /> 
+	<param name="allowFullScreen" value="false" /> 
+	<param name="movie" value="countDown.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#000000" />	<embed src="http://www.mspaintadventures.com/phpBB3/countDown.swf" quality="high" bgcolor="#000000" width="650" height="60" name="countDown" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" /> 
+	</object> 
+</div>
+
+<div id="wrapcentre">
+
+	<!---->
+
+	<br />
+<div id="pageheader">
+	<h2><a class="titles" href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;start=325&amp;sid=69f04023228ec7286871c927fde0bebd">In Their Native Art Style</a></h2>
+
+	<p class="moderators">Moderators: <a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=1918&amp;sid=69f04023228ec7286871c927fde0bebd">Wesley Foxx</a>, <a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=1906&amp;sid=69f04023228ec7286871c927fde0bebd">SleepingOrange</a>, <a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=group&amp;g=325&amp;sid=69f04023228ec7286871c927fde0bebd">Mods</a>, <a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=group&amp;g=3&amp;sid=69f04023228ec7286871c927fde0bebd">Admins</a></p>
+<br /><p class="moderators"></p>
+</div>
+
+<div id="pagecontent">
+
+	<table width="100%" cellspacing="1">
+	<tr>
+		<td align="left" valign="middle" nowrap="nowrap">
+		<a href="http://www.mspaintadventures.com/phpBB3/posting.php?mode=post&amp;f=35&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/button_topic_new.gif" alt="Post new topic" title="Post new topic" /></a>&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/posting.php?mode=reply&amp;f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/button_topic_reply.gif" alt="Reply to topic" title="Reply to topic" /></a>		</td>
+					<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>14</strong> of <strong>19</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 473 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><p class="index"><a href="http://www.mspaintadventures.com/phpBB3/index.php?sid=69f04023228ec7286871c927fde0bebd">Board index</a> : <a href="http://www.mspaintadventures.com/phpBB3/viewforum.php?f=33&amp;sid=69f04023228ec7286871c927fde0bebd">MSPA</a> : <a href="http://www.mspaintadventures.com/phpBB3/viewforum.php?f=35&amp;sid=69f04023228ec7286871c927fde0bebd">MSPA Forum Adventures</a></p><b><a href="itnas_pg14.html#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=300">Previous</a>&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd">1</a> ... <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=250">11</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=275">12</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=300">13</a><span class="page-sep">, </span><strong>14</strong><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=350">15</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=375">16</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=400">17</a> ... <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=450">19</a> &nbsp;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=350">Next</a></b></td>
+			</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr>
+		<td class="cat">
+			<table width="100%" cellspacing="0">
+			<tr>
+				<td class="nav" nowrap="nowrap">
+				<p class="extra">
+					<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;start=325&amp;sid=69f04023228ec7286871c927fde0bebd&amp;view=print" title="Print view">Print view</a>				</td>
+				<td class="nav" align="right" nowrap="nowrap"><p class="extra"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;view=previous&amp;sid=69f04023228ec7286871c927fde0bebd">Previous topic</a> :: <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;view=next&amp;sid=69f04023228ec7286871c927fde0bebd">Next topic</a>&nbsp;</p></td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+
+	<table class="tablebg" width="100%" cellspacing="1">
+			<tr>
+			<th>Author</th>
+			<th>Message</th>
+		</tr>
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p735558"></a>
+				<b class="postauthor">SonicLover</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=735558&amp;sid=69f04023228ec7286871c927fde0bebd#p735558"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Sun Apr 18, 2010 2:57 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i35.photobucket.com/albums/d174/SonicLoverDS/MSPA/sonic_seriously.png" width="66" height="66" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Apr 07, 2009 9:02 am<br /><b>Posts:</b> 5262				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">&gt;Can we get another time lapse?  Maybe we can fast-forward to when something <span style="font-style: italic">interesting</span> happens this time.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=568248#p568248" class="postlink" target="_blank">My projects</a><br /><br />Yes, I <span style="font-style: italic">am</span> the same SonicLover as from JayIsGames.  Now stop asking!</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=1991&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p738305"></a>
+				<b class="postauthor">simon.clarkstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=738305&amp;sid=69f04023228ec7286871c927fde0bebd#p738305"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Mon Apr 19, 2010 3:18 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img535.imageshack.us/img535/5375/itnas190.png" width="150" height="100" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Feb 02, 2010 2:04 pm<br /><b>Posts:</b> 533<br /><b>Location:</b> Oxford, UK				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">SonicLover wrote:</div><div class="quotecontent">&gt;Can we get another time lapse?  Maybe we can fast-forward to when something <span style="font-style: italic">interesting</span> happens this time.</div><br /><span style="font-size: 85%; line-height: normal"><span style="font-style: italic">That initially felt like a stab in the chest but it turned out to be a kick up the arse.&lt;/mixed-metaphor&gt;  The author should really have spotted the lack of interactivity earlier since he was starting to get bored while writing it, never mind reading it.</span></span><br /><br /><img src="http://img194.imageshack.us/img194/75/itnas157.png" alt="Image" /><br /><br />You go inwards and round, to the point in geostationary orbit where the the jump-point is.<br /><br /><img src="http://img62.imageshack.us/img62/9650/itnas158.png" alt="Image" /><br /><br />The chamber activates to move you slightly over 12 nanometres, from Su-x8-5 to Su-4-7.  You haven't visited Su-x8-5 often before, and never while carrying Jz.<br /><br /><img src="http://img163.imageshack.us/img163/9915/itnas159.png" alt="Image" /><br /><br />There is no space station in this subuniverse, but the planet now below you looks quite similar visually to the ones in Su-x8-5 and Su-0-0, except for the clouds.  Its radio emissions are all natural though, and the vegetation patterns and atmospheric composition are slightly different from those of its civilised counterparts.<br /><br />You turn your engines towards the planet and pull hard, applying some opposite force to your insides so the acceleration does not damage Jzaprvlt.  Once in-atmosphere, you give control back to Jz, who is the one who knows where to go.<br /><br />---<br /><br /><img src="http://img444.imageshack.us/img444/8583/itnas160.png" alt="Image" /><br /><br />There is a human settlement below you to the west, on the river junction.  Some of the land is divided into fields, but much is Gaia-controlled grassland and woodland.  Or rather, it would be Gaia-controlled, but these humans do not use proper management of natural resources.<br /><br />Earlier monitoring shows that subject LN-4-7-22 spends much of its time to the northwest of here.  You could benefit from examining the surrounding area in more detail though; the culture and environment in which your subject grew up are important information for understanding its state and development.  You are quite safe from the humans; they do not have any anti-aircraft capabilities, or even long-range communications to react to you.</div>
+
+											<span class="postbody"><br />_________________<br /><div style="text-align: center;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569" class="postlink" target="_blank"><img src="http://img408.imageshack.us/img408/2164/sig01x.png" alt="Image" /></a><br /><span style="font-style: italic">Welcome to the New Extreme</span> art done &#40;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920566#p920566" class="postlink" target="_blank">FA</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=918287#p918287" class="postlink" target="_blank">V5F</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920674#p920674" class="postlink" target="_blank">IT</a>&#41;; <span style="font-weight: bold">ITNAS has resumed</span>.<br /><a href="http://maps.google.com/maps/ms?msa=19&amp;msid=116495269435543799775.000475a708881927d98e6" class="postlink" target="_blank">The locations of Homestuck characters</a> &#40;Google Maps; PM me or something to add data.&#41;<br /><span style="font-weight: bold">The Schoolteacher Ultimatum</span>: &quot;If one of you misbehaves, all of you will be punished.&quot;</div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7558&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=simon_clarkstone&amp;.src=pg"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_yahoo.gif" alt="YIM" title="YIM" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p738353"></a>
+				<b class="postauthor">SonicLover</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=738353&amp;sid=69f04023228ec7286871c927fde0bebd#p738353"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Mon Apr 19, 2010 3:34 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i35.photobucket.com/albums/d174/SonicLoverDS/MSPA/sonic_seriously.png" width="66" height="66" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Apr 07, 2009 9:02 am<br /><b>Posts:</b> 5262				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">&gt;Other guy: Status report</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=568248#p568248" class="postlink" target="_blank">My projects</a><br /><br />Yes, I <span style="font-style: italic">am</span> the same SonicLover as from JayIsGames.  Now stop asking!</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=1991&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p738666"></a>
+				<b class="postauthor">Dfaran</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=738666&amp;sid=69f04023228ec7286871c927fde0bebd#p738666"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Mon Apr 19, 2010 5:03 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img31.imageshack.us/img31/4548/danfishaearoavatar.png" width="150" height="150" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Dec 07, 2009 12:44 am<br /><b>Posts:</b> 1938				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">&gt;Jz: Use some sort of controlled electromagnetic emission burst to develop a 3d model of the area, then locate LN-4-7-22.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=5634" class="postlink" target="_blank"><img src="http://img641.imageshack.us/img641/4612/sigbanner3left.png" alt="Image" /></a><img src="http://img641.imageshack.us/img641/7456/sigbanner3middle.png" alt="Image" /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=5635" class="postlink" target="_blank"><img src="http://img709.imageshack.us/img709/6282/sigbanner3right.png" alt="Image" /></a><a href="http://terraprime-encyclopedantic.wikia.com/wiki/Terraprime_Historical_Wiki" class="postlink" target="_blank"><img src="http://i43.tinypic.com/244d65u.png" alt="Image" /></a><br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=7148" class="postlink" target="_blank">DUEL: Dfaran Drops Moon Rocks on Everyone's Heads</a><br />Avatar by Danfish</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=6830&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p740049"></a>
+				<b class="postauthor">joecool280</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=740049&amp;sid=69f04023228ec7286871c927fde0bebd#p740049"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Tue Apr 20, 2010 9:33 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img16.imageshack.us/img16/1163/davejz.jpg" width="150" height="110" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Dec 23, 2009 3:35 am<br /><b>Posts:</b> 116				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">Interesting, I wonder what time period Jz has arrived in.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=7923&amp;p=775072" class="postlink" target="_blank">My first adventure! The land of Bhaile Chaisteal, a text adventure.</a></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7051&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p743287"></a>
+				<b class="postauthor">simon.clarkstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=743287&amp;sid=69f04023228ec7286871c927fde0bebd#p743287"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Wed Apr 21, 2010 4:24 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img535.imageshack.us/img535/5375/itnas190.png" width="150" height="100" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Feb 02, 2010 2:04 pm<br /><b>Posts:</b> 533<br /><b>Location:</b> Oxford, UK				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">Dfaran wrote:</div><div class="quotecontent">&gt;Jz: Use some sort of controlled electromagnetic emission burst to develop a 3d model of the area, then locate LN-4-7-22.</div><br /><img src="http://img72.imageshack.us/img72/1064/itnas161.png" alt="Image" /><br /><br />You already have a good 3D model of the area from satellite pictures and your descent.  You communicate with a couple of drones that have been flying over the area since your last visit.  They have tracked the subject by its distinctive temperature; the metabolism needed for its (intended) mental and physical capabilities gives it the highest body temperature of any large creature around: 320K.  Currently it is in some woodland at the north edge of the area that the humans have colonised.  The woodland obstructs the view, but this area it must be within is quite small, so a ground search would be practical.<br /><div class="quotetitle">KingTwelveSixteen wrote:</div><div class="quotecontent">&gt;Wait for the other guy maybe?</div><br />You discussed that with Tkhlpzyv earlier, while you were still waiting at the spaceport.  You agreed then that waiting would be a waste of your time; you could monitor the subject until Tk arrived to work with you.  However, you have been looking at data from the probes on the way over here, and you have found that this area presents an opportunity to interact with humans that have not encountered civilised members of your species for a long time.<br /><br />If the subject has formed friendships with the humans around it, then befriending them will cause the subject to trust you more.  OTOH, if the subject has antagonised the humans around it, then opposing the humans will win its trust more rapidly.<br /><div class="quotetitle">A Fan wrote:</div><div class="quotecontent">Jz: See if Tk has repaired the systems that had been EMP'd. If not, he is therefore incapacitated, and you must carry on in his stead.</div><br /><img src="http://img72.imageshack.us/img72/3190/itnas162.png" alt="Image" /><br /><br />You doubt that repair has been finished yet; after the surgery Tkhlpzyv's built-in repair systems will take days at least to finish full nano-scale reconstruction, though recovery from the surgery will be quicker and Tk can already use the new LDC for communication.  You contact Tk for more details.<br /><div class="quotetitle"><b>Quote:</b></div><div class="quotecontent">Jz: I'm near the area the subject is supposed to be, to keep examining it.<br />Jz: I have been thinking about more detailed investigation of the humans that it has grown up amongst.<br />Tk: Now isn't a good time for me to talk; I'm still in surgery.<br />Tk: I'll need to shut down half my brain soon to let the surgeon operate on it.<br />Jz: I thought you'd be able to get from the stabiliser to the spaceport faster than that.<br />Tk: I was flying with my own wings, and without any comms or radar.<br />Tk: I had to watch the landings of everyone else because I couldn't look up the approach patterns.<br />Tk: And I had to use the ISD to ask for directions to the medical place.<br />Yw: This conversation is delaying the procedure.<br />Jz: Is there much damage?<br />Ywsaznxd sent some medical data.<br />Yw: The repairs will significantly disrupt power supply to some areas, and the low-power state will cause deactivation for many hours afterwards.<br />Yw: Tkhlpzyv cannot be available during that time.<br />Tk: Ywsaznxd says I have to go now.<br />Tkhlpzyv is offline.</div><br />From the data that Ywsaznxd linked to, the projected physical fragility of initial repairs mean that Tkhlpzyv should not undergo the stresses of ascending and descending to and from the jump-point in the near future.  Tk's involvement will have to remain remote.</div>
+
+											<span class="postbody"><br />_________________<br /><div style="text-align: center;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569" class="postlink" target="_blank"><img src="http://img408.imageshack.us/img408/2164/sig01x.png" alt="Image" /></a><br /><span style="font-style: italic">Welcome to the New Extreme</span> art done &#40;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920566#p920566" class="postlink" target="_blank">FA</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=918287#p918287" class="postlink" target="_blank">V5F</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920674#p920674" class="postlink" target="_blank">IT</a>&#41;; <span style="font-weight: bold">ITNAS has resumed</span>.<br /><a href="http://maps.google.com/maps/ms?msa=19&amp;msid=116495269435543799775.000475a708881927d98e6" class="postlink" target="_blank">The locations of Homestuck characters</a> &#40;Google Maps; PM me or something to add data.&#41;<br /><span style="font-weight: bold">The Schoolteacher Ultimatum</span>: &quot;If one of you misbehaves, all of you will be punished.&quot;</div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7558&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=simon_clarkstone&amp;.src=pg"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_yahoo.gif" alt="YIM" title="YIM" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p743429"></a>
+				<b class="postauthor">Crowstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=743429&amp;sid=69f04023228ec7286871c927fde0bebd#p743429"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Wed Apr 21, 2010 5:16 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/iamcrowonstone1.png" width="90" height="145" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Apr 06, 2009 5:49 pm<br /><b>Posts:</b> 8288<br /><b>Location:</b> Sitting in the sand				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">I suppose its time to land near the site of the subject<br />Is this subject a human also?</div>
+
+											<span class="postbody"><br />_________________<br />Gone all July, I am unsure of how much I can access the internet. <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=7130" class="postlink" target="_blank">Shift Period!  It´s started!  Read happy!</a><div style="margin:20px; margin-top:5px"><div class="smallfont" style="margin-bottom:2px"><input type="button" value="Show" style="width:45px;font-size:10px;margin:0px;padding:0px;" onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }"></div><div class="alt2" style="margin: 0px; padding: 6px; border: 1px inset;"><div style="display: none;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=8835" class="postlink" target="_blank">Tureflesur 2</a>. <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=8645" class="postlink" target="_blank">The Rooftop Queen</a>.<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=556484#p556484" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/CSbibliograph1.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=6590" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/SparCGRbantise1.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=7148" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/ddmrehBantise2.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=37&amp;t=5665" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/cbfiBantise1.png" alt="Image" /></a><br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=45&amp;t=8304" class="postlink" target="_blank">Snakebite Saloon</a></div></div></div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=1837&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p744317"></a>
+				<b class="postauthor">joecool280</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=744317&amp;sid=69f04023228ec7286871c927fde0bebd#p744317"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Wed Apr 21, 2010 11:28 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img16.imageshack.us/img16/1163/davejz.jpg" width="150" height="110" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Dec 23, 2009 3:35 am<br /><b>Posts:</b> 116				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">I think the &quot;subject&quot; is the dragon we saw playing with Timmy. It would make sense I think.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=7923&amp;p=775072" class="postlink" target="_blank">My first adventure! The land of Bhaile Chaisteal, a text adventure.</a></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7051&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p744832"></a>
+				<b class="postauthor">A Fan</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=744832&amp;sid=69f04023228ec7286871c927fde0bebd#p744832"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Thu Apr 22, 2010 9:48 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i171.photobucket.com/albums/u281/A_Hack/helectrode.png" width="150" height="119" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Sep 21, 2009 1:08 pm<br /><b>Posts:</b> 624<br /><b>Location:</b> In front of a computer				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">Jz: Land within walking/flying distance of the subject, but far enough away that you are less likely to be detected by the subjects or nearby humans.</div>
+
+											<span class="postbody"><br />_________________<br />&quot;Outside of a dog, a book is a man's best friend. Inside of a dog, it's too dark to read&quot;<br />—Oscar Wilde</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=5735&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p745636"></a>
+				<b class="postauthor">simon.clarkstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=745636&amp;sid=69f04023228ec7286871c927fde0bebd#p745636"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Thu Apr 22, 2010 4:21 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img535.imageshack.us/img535/5375/itnas190.png" width="150" height="100" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Feb 02, 2010 2:04 pm<br /><b>Posts:</b> 533<br /><b>Location:</b> Oxford, UK				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">A Fan wrote:</div><div class="quotecontent">Jz: Land within walking/flying distance of the subject, but far enough away that you are less likely to be detected by the subjects or nearby humans.</div><br /><img src="http://img685.imageshack.us/img685/3388/itnas163.png" alt="Image" /><br /><br />The drones show that the subject has come out from under the trees and entered a pond.  You land in a space between some woodland and a large wall.<br /><br />The subject is interacting with a young human; it seems that these humans are not afraid of your species, which will be convenient.  You will stay just out of sight, to get sound of their interaction with one another using a long-range microphone.<br /><br /><img src="http://img685.imageshack.us/img685/5112/itnas164.png" alt="Image" /><br /><br />They seem to have spotted your craft's descent and are heading towards where they think you landed, but they must have mis-estimated the position.  If they enter the woodland then you will need to listen at much closer range, increasing the risk of detection.<br /><div class="quotetitle">Crowstone wrote:</div><div class="quotecontent">I suppose its time to land near the site of the subject</div><br /><img src="http://img705.imageshack.us/img705/804/itnas165.png" alt="Image" /><br /><br />You tell your craft to reposition ahead of the subject in the direction it is heading, in a mostly-clear patch; they will not know what it is, and will not associate it with your species.  You also go straight towards it.<br /><br /><img src="http://img697.imageshack.us/img697/1539/itnas166.png" alt="Image" /><br /><br />You remotely open the spacecraft's hatch, which attracts their attention.  If they enter you can get excellent image, sound, and REMS of them interacting -- an unprecedented opportunity.  Not only that, but they will be in a novel situation and encountering complicated things, which will help measure the subject's individual intelligence and collaborative properties.<br /><br /><span style="font-size: 85%; line-height: normal"><span style="font-style: italic">The author will now consider commands for Jzaprvlt, Shewson, and (maybe) Timmy.  But obviously not Tkhlpzyv.</span></span></div>
+
+											<span class="postbody"><br />_________________<br /><div style="text-align: center;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569" class="postlink" target="_blank"><img src="http://img408.imageshack.us/img408/2164/sig01x.png" alt="Image" /></a><br /><span style="font-style: italic">Welcome to the New Extreme</span> art done &#40;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920566#p920566" class="postlink" target="_blank">FA</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=918287#p918287" class="postlink" target="_blank">V5F</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920674#p920674" class="postlink" target="_blank">IT</a>&#41;; <span style="font-weight: bold">ITNAS has resumed</span>.<br /><a href="http://maps.google.com/maps/ms?msa=19&amp;msid=116495269435543799775.000475a708881927d98e6" class="postlink" target="_blank">The locations of Homestuck characters</a> &#40;Google Maps; PM me or something to add data.&#41;<br /><span style="font-weight: bold">The Schoolteacher Ultimatum</span>: &quot;If one of you misbehaves, all of you will be punished.&quot;</div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7558&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=simon_clarkstone&amp;.src=pg"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_yahoo.gif" alt="YIM" title="YIM" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p745678"></a>
+				<b class="postauthor">Crowstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=745678&amp;sid=69f04023228ec7286871c927fde0bebd#p745678"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Thu Apr 22, 2010 4:36 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/iamcrowonstone1.png" width="90" height="145" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Apr 06, 2009 5:49 pm<br /><b>Posts:</b> 8288<br /><b>Location:</b> Sitting in the sand				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">&gt;Tk: Burst out of the surgery room before it is complete, wreak havoc on the city with your incomplete mind having both gone insane and developed hyper-powerful telekenetic abilities<br /><br />&gt;Timmy: oh hey there's an opening let's go in</div>
+
+											<span class="postbody"><br />_________________<br />Gone all July, I am unsure of how much I can access the internet. <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=7130" class="postlink" target="_blank">Shift Period!  It´s started!  Read happy!</a><div style="margin:20px; margin-top:5px"><div class="smallfont" style="margin-bottom:2px"><input type="button" value="Show" style="width:45px;font-size:10px;margin:0px;padding:0px;" onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }"></div><div class="alt2" style="margin: 0px; padding: 6px; border: 1px inset;"><div style="display: none;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=8835" class="postlink" target="_blank">Tureflesur 2</a>. <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=8645" class="postlink" target="_blank">The Rooftop Queen</a>.<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=556484#p556484" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/CSbibliograph1.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=6590" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/SparCGRbantise1.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=7148" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/ddmrehBantise2.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=37&amp;t=5665" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/cbfiBantise1.png" alt="Image" /></a><br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=45&amp;t=8304" class="postlink" target="_blank">Snakebite Saloon</a></div></div></div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=1837&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p745722"></a>
+				<b class="postauthor">A Fan</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=745722&amp;sid=69f04023228ec7286871c927fde0bebd#p745722"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Thu Apr 22, 2010 4:53 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i171.photobucket.com/albums/u281/A_Hack/helectrode.png" width="150" height="119" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Sep 21, 2009 1:08 pm<br /><b>Posts:</b> 624<br /><b>Location:</b> In front of a computer				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">Shewson: Explore the alien spaceship. Note how everything seems to be made for you.<br /><br />Timmy: Feel oddly triangular.</div>
+
+											<span class="postbody"><br />_________________<br />&quot;Outside of a dog, a book is a man's best friend. Inside of a dog, it's too dark to read&quot;<br />—Oscar Wilde</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=5735&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p747734"></a>
+				<b class="postauthor">orngjce223</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=747734&amp;sid=69f04023228ec7286871c927fde0bebd#p747734"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Fri Apr 23, 2010 3:13 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i31.tinypic.com/2mfx24i.png" width="110" height="110" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Fri Dec 04, 2009 4:12 pm<br /><b>Posts:</b> 1972<br /><b>Location:</b> In the fridge				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">Jz: Monitor the activities of the human and the feral.  If you have any food that can be remotely dispensed, it would be a good idea to do so, and try to select the ones with better mouth-taste, ensure their lasting memory of your spacecraft is positive.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://internetometer.com/give/13377" class="postlink" target="_blank"><img src="http://internetometer.com/imagesmall/13377.png" alt="Image" /></a><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=34&amp;t=8500" class="postlink" target="_blank"><img src="http://i626.photobucket.com/albums/tt347/orngjce223/sigbanner/skaianet.png" alt="Image" /></a><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=34&amp;t=8389" class="postlink" target="_blank"><img src="http://i626.photobucket.com/albums/tt347/orngjce223/sigbanner/msparp-alt.png" alt="Image" /></a><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=9215" class="postlink" target="_blank"><img src="http://i626.photobucket.com/albums/tt347/orngjce223/sigbanner/self-insert-adventures.png" alt="Image" /></a></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=6764&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://orngjce223.net/"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_www.gif" alt="WWW" title="WWW" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p747862"></a>
+				<b class="postauthor">rysworld</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=747862&amp;sid=69f04023228ec7286871c927fde0bebd#p747862"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Fri Apr 23, 2010 4:05 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img203.imageshack.us/img203/1050/supertaco.gif" width="128" height="96" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Feb 17, 2010 9:27 pm<br /><b>Posts:</b> 133<br /><b>Location:</b> Los Angeles				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">orngjce223 wrote:</div><div class="quotecontent">Jz: Monitor the activities of the human and the feral.  If you have any food that can be remotely dispensed, it would be a good idea to do so, and try to select the ones with better mouth-taste, ensure their lasting memory of your spacecraft is positive.</div>This.<br /><br />Also, you have a new reader, Simon.</div>
+
+											<span class="postbody"><br />_________________<br />Apparently, my signature was egregiously huge, so I spoilered part of it.<div style="margin:20px; margin-top:5px"><div class="smallfont" style="margin-bottom:2px"><input type="button" value="Show" style="width:45px;font-size:10px;margin:0px;padding:0px;" onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }"></div><div class="alt2" style="margin: 0px; padding: 6px; border: 1px inset;"><div style="display: none;">All considered, I don&#39;t think it&#39;s a viable possibility that I&#39;ll see you in real life, so allow me to say: If you do not agree with me, I do not care about what you say unless you make a logical argument or statement. I do not consider chat or &quot;1337&quot; speak as actual language, though forum lingo, as long as it does not consist of chat or &quot;1337&quot; speak, I will accept, and occasionally actually use. I will never get into religious or political debates, seeing as to how I&#39;m 13 and know probably shit all about either. Thank you for listening to, or rather, reading, this.<br /><br />~rysworld</div></div></div><br />Also, as insipid and as out of place as it may seem with that brick up there, dragons.<br /><div style="margin:20px; margin-top:5px"><div class="smallfont" style="margin-bottom:2px"><input type="button" value="Show" style="width:45px;font-size:10px;margin:0px;padding:0px;" onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }"></div><div class="alt2" style="margin: 0px; padding: 6px; border: 1px inset;"><div style="display: none;"><a href="http://dragcave.net/view/QunK" class="postlink" target="_blank"><img src="http://dragcave.net/image/QunK.gif" alt="Image" /></a><a href="http://dragcave.net/view/AqL1" class="postlink" target="_blank"><img src="http://dragcave.net/image/AqL1.gif" alt="Image" /></a></div></div></div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7808&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p751716"></a>
+				<b class="postauthor">simon.clarkstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=751716&amp;sid=69f04023228ec7286871c927fde0bebd#p751716"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Sun Apr 25, 2010 1:13 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img535.imageshack.us/img535/5375/itnas190.png" width="150" height="100" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Feb 02, 2010 2:04 pm<br /><b>Posts:</b> 533<br /><b>Location:</b> Oxford, UK				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">Crowstone wrote:</div><div class="quotecontent">&gt;Timmy: oh hey there's an opening let's go in</div><br /><img src="http://img686.imageshack.us/img686/9721/itnas167.png" alt="Image" /><br /><br />Shewson enters the plane.<br /><br /><img src="http://img130.imageshack.us/img130/8460/itnas168.png" alt="Image" /><br /><br />You follow her.  She tugs at a rope that comes out of the ceiling.  There is lots of strange things in here.  Some of the walls look like they might open.<br /><br /><span style="font-size: 85%; line-height: normal"><span style="font-style: italic">The author didn't update yesterday due to a walk that resulted in getting home rather late.</span></span></div>
+
+											<span class="postbody"><br />_________________<br /><div style="text-align: center;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569" class="postlink" target="_blank"><img src="http://img408.imageshack.us/img408/2164/sig01x.png" alt="Image" /></a><br /><span style="font-style: italic">Welcome to the New Extreme</span> art done &#40;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920566#p920566" class="postlink" target="_blank">FA</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=918287#p918287" class="postlink" target="_blank">V5F</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920674#p920674" class="postlink" target="_blank">IT</a>&#41;; <span style="font-weight: bold">ITNAS has resumed</span>.<br /><a href="http://maps.google.com/maps/ms?msa=19&amp;msid=116495269435543799775.000475a708881927d98e6" class="postlink" target="_blank">The locations of Homestuck characters</a> &#40;Google Maps; PM me or something to add data.&#41;<br /><span style="font-weight: bold">The Schoolteacher Ultimatum</span>: &quot;If one of you misbehaves, all of you will be punished.&quot;</div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7558&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=simon_clarkstone&amp;.src=pg"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_yahoo.gif" alt="YIM" title="YIM" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p751746"></a>
+				<b class="postauthor">joecool280</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=751746&amp;sid=69f04023228ec7286871c927fde0bebd#p751746"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Sun Apr 25, 2010 1:25 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img16.imageshack.us/img16/1163/davejz.jpg" width="150" height="110" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Dec 23, 2009 3:35 am<br /><b>Posts:</b> 116				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">Jz/Ship: Begin activating systems upon detecting &quot;Shewson&quot;'s genetic code.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=7923&amp;p=775072" class="postlink" target="_blank">My first adventure! The land of Bhaile Chaisteal, a text adventure.</a></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7051&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p751979"></a>
+				<b class="postauthor">Crowstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=751979&amp;sid=69f04023228ec7286871c927fde0bebd#p751979"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Sun Apr 25, 2010 3:59 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/iamcrowonstone1.png" width="90" height="145" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Apr 06, 2009 5:49 pm<br /><b>Posts:</b> 8288<br /><b>Location:</b> Sitting in the sand				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">&gt;Measure the subject's individual intelligence, collaborative properties, and get excellent image, sound and REMS of them interactive -- it is an unprecedented oppurtunity</div>
+
+											<span class="postbody"><br />_________________<br />Gone all July, I am unsure of how much I can access the internet. <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=7130" class="postlink" target="_blank">Shift Period!  It´s started!  Read happy!</a><div style="margin:20px; margin-top:5px"><div class="smallfont" style="margin-bottom:2px"><input type="button" value="Show" style="width:45px;font-size:10px;margin:0px;padding:0px;" onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Show'; }"></div><div class="alt2" style="margin: 0px; padding: 6px; border: 1px inset;"><div style="display: none;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=8835" class="postlink" target="_blank">Tureflesur 2</a>. <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=8645" class="postlink" target="_blank">The Rooftop Queen</a>.<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=556484#p556484" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/CSbibliograph1.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=6590" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/SparCGRbantise1.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=7148" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/ddmrehBantise2.png" alt="Image" /></a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=37&amp;t=5665" class="postlink" target="_blank"><img src="http://i580.photobucket.com/albums/ss243/DictionaryHand/cbfiBantise1.png" alt="Image" /></a><br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=45&amp;t=8304" class="postlink" target="_blank">Snakebite Saloon</a></div></div></div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=1837&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p752055"></a>
+				<b class="postauthor">A Fan</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=752055&amp;sid=69f04023228ec7286871c927fde0bebd#p752055"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Sun Apr 25, 2010 4:50 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i171.photobucket.com/albums/u281/A_Hack/helectrode.png" width="150" height="119" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Sep 21, 2009 1:08 pm<br /><b>Posts:</b> 624<br /><b>Location:</b> In front of a computer				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">Shewson, Timmy: Explore and experiment.</div>
+
+											<span class="postbody"><br />_________________<br />&quot;Outside of a dog, a book is a man's best friend. Inside of a dog, it's too dark to read&quot;<br />—Oscar Wilde</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=5735&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p752837"></a>
+				<b class="postauthor">KingTwelveSixteen</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=752837&amp;sid=69f04023228ec7286871c927fde0bebd#p752837"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Mon Apr 26, 2010 12:20 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Sun Jan 31, 2010 10:44 pm<br /><b>Posts:</b> 3460<br /><b>Location:</b> U.S.A.				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">&gt;Press all the buttons.</div>
+
+											<span class="postbody"><br />_________________<br />The Locksmith medal, my first medal earned. <!-- m --><a class="postlink" href="http://img98.imageshack.us/img98/231/locksmithmedal.png">http://img98.imageshack.us/img98/231/locksmithmedal.png</a><!-- m --></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7537&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p756374"></a>
+				<b class="postauthor">simon.clarkstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=756374&amp;sid=69f04023228ec7286871c927fde0bebd#p756374"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Tue Apr 27, 2010 3:47 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img535.imageshack.us/img535/5375/itnas190.png" width="150" height="100" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Feb 02, 2010 2:04 pm<br /><b>Posts:</b> 533<br /><b>Location:</b> Oxford, UK				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">orngjce223 wrote:</div><div class="quotecontent">Jz: Monitor the activities of the human and the feral.  If you have any food that can be remotely dispensed, it would be a good idea to do so, and try to select the ones with better mouth-taste, ensure their lasting memory of your spacecraft is positive.</div>The subject is pulling at a cable, and will break the socket if it keeps pulling.  It's already knocked over the spare surveillance drone.<br /><br /><img src="http://img297.imageshack.us/img297/3850/itnas169.png" alt="Image" /><br /><br />To attempt to distract it, you open your luggage.  There is some food in the top of there.<br /><br />The human says something.  That causes a lot of activity in the subject's brain, so it probably understands the language at least partly.  You compare the language with the known language families.  The few sentences you have heard aren't enough to tell much.<br /><br /><img src="http://img265.imageshack.us/img265/2109/itnas170.png" alt="Image" /><br /><br />The subject pulled the cable out despite your attempted distraction.  It takes out a ration, while the human kicks your toolkit out of the way.  You shut your luggage before either of them takes anything else out of there.<br /><br />Maybe letting them into your craft was a bad idea.  Tkhlpzyv wouldn't have done it, but Tk often rejects plans you make as too risky, or potentially so.</div>
+
+											<span class="postbody"><br />_________________<br /><div style="text-align: center;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569" class="postlink" target="_blank"><img src="http://img408.imageshack.us/img408/2164/sig01x.png" alt="Image" /></a><br /><span style="font-style: italic">Welcome to the New Extreme</span> art done &#40;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920566#p920566" class="postlink" target="_blank">FA</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=918287#p918287" class="postlink" target="_blank">V5F</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920674#p920674" class="postlink" target="_blank">IT</a>&#41;; <span style="font-weight: bold">ITNAS has resumed</span>.<br /><a href="http://maps.google.com/maps/ms?msa=19&amp;msid=116495269435543799775.000475a708881927d98e6" class="postlink" target="_blank">The locations of Homestuck characters</a> &#40;Google Maps; PM me or something to add data.&#41;<br /><span style="font-weight: bold">The Schoolteacher Ultimatum</span>: &quot;If one of you misbehaves, all of you will be punished.&quot;</div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7558&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=simon_clarkstone&amp;.src=pg"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_yahoo.gif" alt="YIM" title="YIM" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p756714"></a>
+				<b class="postauthor">Dfaran</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=756714&amp;sid=69f04023228ec7286871c927fde0bebd#p756714"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Tue Apr 27, 2010 5:14 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img31.imageshack.us/img31/4548/danfishaearoavatar.png" width="150" height="150" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Dec 07, 2009 12:44 am<br /><b>Posts:</b> 1938				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">&gt;Jz: Consider that you probably should have at least prepared an area free of hazards or fragile equipment for them. <br /><br />&gt;Timmy: Open up the toolkit and play with the tools.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=5634" class="postlink" target="_blank"><img src="http://img641.imageshack.us/img641/4612/sigbanner3left.png" alt="Image" /></a><img src="http://img641.imageshack.us/img641/7456/sigbanner3middle.png" alt="Image" /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=5635" class="postlink" target="_blank"><img src="http://img709.imageshack.us/img709/6282/sigbanner3right.png" alt="Image" /></a><a href="http://terraprime-encyclopedantic.wikia.com/wiki/Terraprime_Historical_Wiki" class="postlink" target="_blank"><img src="http://i43.tinypic.com/244d65u.png" alt="Image" /></a><br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=44&amp;t=7148" class="postlink" target="_blank">DUEL: Dfaran Drops Moon Rocks on Everyone's Heads</a><br />Avatar by Danfish</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=6830&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p757612"></a>
+				<b class="postauthor">joecool280</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=757612&amp;sid=69f04023228ec7286871c927fde0bebd#p757612"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Tue Apr 27, 2010 10:41 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img16.imageshack.us/img16/1163/davejz.jpg" width="150" height="110" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Wed Dec 23, 2009 3:35 am<br /><b>Posts:</b> 116				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">Dfaran wrote:</div><div class="quotecontent">&gt;Jz: Consider that you probably should have at least prepared an area free of hazards or fragile equipment for them. <br /><br />&gt;Timmy: Open up the toolkit and play with the tools.</div><br /><br />This.</div>
+
+											<span class="postbody"><br />_________________<br /><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=7923&amp;p=775072" class="postlink" target="_blank">My first adventure! The land of Bhaile Chaisteal, a text adventure.</a></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7051&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p758120"></a>
+				<b class="postauthor">A Fan</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=758120&amp;sid=69f04023228ec7286871c927fde0bebd#p758120"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Wed Apr 28, 2010 10:21 am&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://i171.photobucket.com/albums/u281/A_Hack/helectrode.png" width="150" height="119" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Mon Sep 21, 2009 1:08 pm<br /><b>Posts:</b> 624<br /><b>Location:</b> In front of a computer				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody">Jz: Consider degree to which the severed cable was necessary for your ship's proper operation. Then try to isolate the feral from the human.<br /><br />Shewson: Mmm, pink semicircles.<br /><br />Timmy: Examine what you just kicked.</div>
+
+											<span class="postbody"><br />_________________<br />&quot;Outside of a dog, a book is a man's best friend. Inside of a dog, it's too dark to read&quot;<br />—Oscar Wilde</span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=5735&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> &nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row2">
+			<td align="center" valign="middle">
+				<a name="p761513"></a>
+				<b class="postauthor">simon.clarkstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=761513&amp;sid=69f04023228ec7286871c927fde0bebd#p761513"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Thu Apr 29, 2010 4:22 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row2">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img535.imageshack.us/img535/5375/itnas190.png" width="150" height="100" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Feb 02, 2010 2:04 pm<br /><b>Posts:</b> 533<br /><b>Location:</b> Oxford, UK				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">A Fan wrote:</div><div class="quotecontent">Shewson: Mmm, pink semicircles.</div><br /><img src="http://img576.imageshack.us/img576/226/itnas171.png" alt="Image" /><br /><br />You wave the pink thing about.  It's all squidgy.  You don't know what it is for but you play with it like it's a rabbit.  And Timmy accidentally knocks a round thing down the hole.<br /><br /><div class="quotetitle">A Fan wrote:</div><div class="quotecontent">Timmy: Examine what you just kicked.</div><br /><img src="http://img576.imageshack.us/img576/8484/itnas172.png" alt="Image" /><br /><br />Timmy shakes a box and it rattles.<br /><br />The pink thing comes apart.  You try some of the insides.  They're pink too.<br /><span style="font-style: italic">This is highly nutritious food.  You should consume it all.</span><br />No.  It tastes of boring!<br /><span style="font-style: italic">It's high in protein though.</span><br />You eat a bit more of the pink stuff.</div>
+
+											<span class="postbody"><br />_________________<br /><div style="text-align: center;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569" class="postlink" target="_blank"><img src="http://img408.imageshack.us/img408/2164/sig01x.png" alt="Image" /></a><br /><span style="font-style: italic">Welcome to the New Extreme</span> art done &#40;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920566#p920566" class="postlink" target="_blank">FA</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=918287#p918287" class="postlink" target="_blank">V5F</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920674#p920674" class="postlink" target="_blank">IT</a>&#41;; <span style="font-weight: bold">ITNAS has resumed</span>.<br /><a href="http://maps.google.com/maps/ms?msa=19&amp;msid=116495269435543799775.000475a708881927d98e6" class="postlink" target="_blank">The locations of Homestuck characters</a> &#40;Google Maps; PM me or something to add data.&#41;<br /><span style="font-weight: bold">The Schoolteacher Ultimatum</span>: &quot;If one of you misbehaves, all of you will be punished.&quot;</div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row2">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7558&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=simon_clarkstone&amp;.src=pg"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_yahoo.gif" alt="YIM" title="YIM" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+	<table class="tablebg" width="100%" cellspacing="1">
+	<tr class="row1">
+			<td align="center" valign="middle">
+				<a name="p765680"></a>
+				<b class="postauthor">simon.clarkstone</b>
+			</td>
+			<td width="100%" height="25">
+				<table width="100%" cellspacing="0">
+				<tr>
+									<td class="gensmall" width="100%"><div style="float: left;">&nbsp;<b>Post subject:</b> Re: In Their Native Art Style</div><div style="float: right;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=765680&amp;sid=69f04023228ec7286871c927fde0bebd#p765680"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/icon_post_target.gif" width="12" height="9" alt="Post" title="Post" /></a><b>Posted:</b> Sat May 01, 2010 5:44 pm&nbsp;</div></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="row1">
+			<td valign="top" class="profile">
+				<table cellspacing="4" align="center" width="150">
+							<tr>
+					<td><div align="center"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_offline.gif" alt="Offline" title="Offline" /></div></td>
+				</tr>
+							<tr>
+					<td><div align="center"><img src="http://img535.imageshack.us/img535/5375/itnas190.png" width="150" height="100" alt="User avatar" /></div></td>
+				</tr>
+							</table>
+
+				<span class="postdetails">
+					<br /><b>Joined:</b> Tue Feb 02, 2010 2:04 pm<br /><b>Posts:</b> 533<br /><b>Location:</b> Oxford, UK				</span>
+
+			</td>
+			<td valign="top">
+				<table width="100%" cellspacing="5">
+				<tr>
+					<td>
+					
+						<div class="postbody"><div class="quotetitle">Crowstone wrote:</div><div class="quotecontent">&gt;Measure the subject's individual intelligence, collaborative properties, and get excellent image, sound and REMS of them interactive -- it is an unprecedented oppurtunity</div><br /><img src="http://img217.imageshack.us/img217/5792/itnas173.png" alt="Image" /><br /><br />From the brainwaves you are monitoring, you find that the subject's mind is misformed due to it not having been guided during development.  Many normal connections have been made only weakly or not at all, so much of the lower-level processing is being performed (poorly) by higher-level areas.  Where the lower-level modules are producing results they are being mostly ignored, and so they have formed some decision-making capabilities of their own, which are also mostly ignored.  Of course, the subject does not have the meta-programming ability to fix this mess.<br /><br />From their interaction, the human and the subject must have a mutual trust and loyalty, a desire for each others' presence, a desire to imitate each other, etc.  The subject partly understands the humans' spoken language, but hasn't spoken it yet (and would have physical difficulty with that).<br /><div class="quotetitle">Dfaran wrote:</div><div class="quotecontent">&gt;Timmy: Open up the toolkit and play with the tools.</div><br /><img src="http://img217.imageshack.us/img217/2064/itnas174.png" alt="Image" /><br /><br />Timmy tries hitting tools with other tools.  Some of them make a musical sound.<br /><br /><span style="font-size: 85%; line-height: normal"><span style="font-style: italic">Ok, the situation is a bit more &quot;open&quot; than it was before.</span></span></div>
+
+											<span class="postbody"><br />_________________<br /><div style="text-align: center;"><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569" class="postlink" target="_blank"><img src="http://img408.imageshack.us/img408/2164/sig01x.png" alt="Image" /></a><br /><span style="font-style: italic">Welcome to the New Extreme</span> art done &#40;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920566#p920566" class="postlink" target="_blank">FA</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=918287#p918287" class="postlink" target="_blank">V5F</a>, <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?p=920674#p920674" class="postlink" target="_blank">IT</a>&#41;; <span style="font-weight: bold">ITNAS has resumed</span>.<br /><a href="http://maps.google.com/maps/ms?msa=19&amp;msid=116495269435543799775.000475a708881927d98e6" class="postlink" target="_blank">The locations of Homestuck characters</a> &#40;Google Maps; PM me or something to add data.&#41;<br /><span style="font-weight: bold">The Schoolteacher Ultimatum</span>: &quot;If one of you misbehaves, all of you will be punished.&quot;</div></span>
+					<br clear="all" /><br />
+						<table width="100%" cellspacing="0">
+						<tr valign="middle">
+							<td class="gensmall" align="right">
+														</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr class="row1">
+			<td class="extra"><strong><a href="itnas_pg14.html#wrapheader">Back to top</a></strong></td>
+			<td><div class="gensmall" style="float: left;">&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/memberlist.php?mode=viewprofile&amp;u=7558&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_user_profile.gif" alt="Profile" title="Profile" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=simon_clarkstone&amp;.src=pg"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/icon_contact_yahoo.gif" alt="YIM" title="YIM" /></a>&nbsp;</div> <div class="gensmall" style="float: right;">&nbsp;</div></td>
+		</tr>
+
+		
+	<tr>
+		<td class="spacer" colspan="2" height="1"><img src="http://www.mspaintadventures.com/phpBB3/images/spacer.gif" alt="" width="1" height="1" /></td>
+	</tr>
+	</table>
+
+	<table width="100%" cellspacing="1" class="tablebg">
+	<tr align="center">
+		<td class="cat"><form name="viewtopic" method="post" action="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;start=325&amp;sid=69f04023228ec7286871c927fde0bebd"><span class="gensmall">Display posts from previous:</span> <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select>&nbsp;<span class="gensmall">Sort by</span> <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select> <select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select>&nbsp;<input class="btnlite" type="submit" value="Go" name="sort" /></form></td>
+	</tr>
+	</table>
+
+	<table width="100%" cellspacing="1">
+	<tr>
+		<td align="left" valign="middle" nowrap="nowrap">
+		<a href="http://www.mspaintadventures.com/phpBB3/posting.php?mode=post&amp;f=35&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/button_topic_new.gif" alt="Post new topic" title="Post new topic" /></a>&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/posting.php?mode=reply&amp;f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd"><img src="http://www.mspaintadventures.com/phpBB3/styles/N.Design/imageset/en/button_topic_reply.gif" alt="Reply to topic" title="Reply to topic" /></a>		</td>
+					<td class="nav" valign="middle" nowrap="nowrap">&nbsp;Page <strong>14</strong> of <strong>19</strong><br /></td>
+			<td class="gensmall" nowrap="nowrap">&nbsp;[ 473 posts ]&nbsp;</td>
+			<td class="gensmall" width="100%" align="right" nowrap="nowrap"><p class="index"><a href="http://www.mspaintadventures.com/phpBB3/index.php?sid=69f04023228ec7286871c927fde0bebd">Board index</a> : <a href="http://www.mspaintadventures.com/phpBB3/viewforum.php?f=33&amp;sid=69f04023228ec7286871c927fde0bebd">MSPA</a> : <a href="http://www.mspaintadventures.com/phpBB3/viewforum.php?f=35&amp;sid=69f04023228ec7286871c927fde0bebd">MSPA Forum Adventures</a></p><b><a href="itnas_pg14.html#" onclick="jumpto(); return false;" title="Click to jump to page…">Go to page</a> <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=300">Previous</a>&nbsp;&nbsp;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd">1</a> ... <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=250">11</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=275">12</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=300">13</a><span class="page-sep">, </span><strong>14</strong><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=350">15</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=375">16</a><span class="page-sep">, </span><a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=400">17</a> ... <a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=450">19</a> &nbsp;<a href="http://www.mspaintadventures.com/phpBB3/viewtopic.php?f=35&amp;t=6569&amp;sid=69f04023228ec7286871c927fde0bebd&amp;start=350">Next</a></b></td>
+			</tr>
+	</table>
+
+</div>
+
+<div id="pagefooter"></div>
+
+<!--<br clear="all" />
+
+-->
+
+
+<br clear="all" />
+
+<table width="100%" cellspacing="1">
+<tr>
+	<td width="40%" valign="top" nowrap="nowrap" align="left"></td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">You <strong>cannot</strong> post new topics in this forum<br />You <strong>cannot</strong> reply to topics in this forum<br />You <strong>cannot</strong> edit your posts in this forum<br />You <strong>cannot</strong> delete your posts in this forum<br /></span></td>
+</tr>
+</table>
+
+<br clear="all" />
+
+<table width="100%" cellspacing="0">
+<tr>
+	<td><form method="post" name="search" action="http://www.mspaintadventures.com/phpBB3/search.php?t=6569&amp;sid=69f04023228ec7286871c927fde0bebd"><span class="gensmall">Search for:</span> <input class="post" type="text" name="keywords" size="20" /> <input class="btnlite" type="submit" value="Go" /></form></td>
+	<td align="right">	<form method="post" name="jumpbox" action="http://www.mspaintadventures.com/phpBB3/viewforum.php?sid=69f04023228ec7286871c927fde0bebd" onsubmit="if(document.jumpbox.f.value == -1){return false;}">
+
+	<table cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:</span>&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+
+					<option value="-1">Select a forum</option>
+		<option value="-1">------------------</option>			<option value="48">Forapocalypse</option>
+					<option value="33">MSPA</option>
+					<option value="34">&nbsp; &nbsp;MSPA Forum</option>
+					<option value="35" selected="selected">&nbsp; &nbsp;MSPA Forum Adventures</option>
+					<option value="37">&nbsp; &nbsp;&nbsp; &nbsp;MSPA FA Meta + Misc.</option>
+					<option value="44">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Games</option>
+					<option value="45">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Collab/Roleplay</option>
+					<option value="38">&nbsp; &nbsp;&nbsp; &nbsp;Completed Forum Adventures</option>
+					<option value="42">&nbsp; &nbsp;Suggestion Boxes</option>
+					<option value="46">&nbsp; &nbsp;&nbsp; &nbsp;Archives</option>
+					<option value="28">Chat Forums</option>
+					<option value="5">&nbsp; &nbsp;General Chat</option>
+					<option value="9">&nbsp; &nbsp;Art Forum</option>
+					<option value="12">&nbsp; &nbsp;Movies / Music / Books / Games</option>
+		
+		</select>&nbsp;<input class="btnlite" type="submit" value="Go" /></td>
+	</tr>
+	</table>
+
+	</form>
+</td>
+</tr>
+</table>
+
+</div>
+
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+
+<div id="wrapfooter">
+		<span class="copyright">Style by <a href="http://www.themidnightphoenix.org/">Midnight Phoenix</a> & <a href="http://www.ndesign-studio.com/">N.Design Studio</a><br />Powered by <a href="http://www.phpbb.com/">phpBB</a> &copy; 2000, 2002, 2005, 2007 phpBB Group.
+	</span>
+</div>
+
+</body>
+</html>
