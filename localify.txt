@@ -1,0 +1,1 @@
+for i in itnas_pg*.html ; do ls $i ; sed "s|http://img[^n]*/\(itnas...\.png\) |../ITNAS/\1|g" $i >local_$i ; echo "+" ; done
